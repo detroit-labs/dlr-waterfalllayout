@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'DLRWaterfallLayout', :exclusive => true do
+  pod "DLRWaterfallLayout", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "DLRWaterfallLayout", :path => "../"
+
+  pod 'Kiwi'
+end
