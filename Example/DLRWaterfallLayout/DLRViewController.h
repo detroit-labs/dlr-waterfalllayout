@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DLRViewController : UIViewController
+@interface DLRViewController : UICollectionViewController
 
 @end

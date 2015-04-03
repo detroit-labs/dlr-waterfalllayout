@@ -1,36 +1,13 @@
 //
-//  DPZCouponFlowLayout~iPad.h
-//  Dominos
+//  DLRWaterfallCollectionViewLayout.h
+//  DLRWaterfallCollectionViewLayout
 //
-//  Created by Mark Schall on 12/9/13.
-//  Copyright (c) 2013 Domino's Pizza. All rights reserved.
+//  Created by Mark Schall on 4/3/15.
+//  Copyright (c) 2015 Detroit Labs, LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface DPZCouponLayout_iPad : UICollectionViewLayout
-
-@end
-
-@protocol DPZCouponLayoutDelegate <UICollectionViewDelegateFlowLayout>
-
-@required
--(NSInteger)collectionView:(UICollectionView *)collectionView
-					layout:(UICollectionViewLayout *)collectionViewLayout
-		  columnsInSection:(NSInteger)section;
-
--(CGFloat)collectionView:(UICollectionView *)collectionView
-				  layout:(UICollectionViewLayout *)collectionViewLayout
-   cellHeightAtIndexPath:(NSIndexPath*)indexPath;
-
-@optional
--(CGFloat)collectionView:(UICollectionView *)collectionView
-				  layout:(UICollectionViewLayout *)collectionViewLayout
-   headerHeightInSection:(NSInteger)sectionIndex;
-
-
--(CGFloat)collectionView:(UICollectionView *)collectionView
-				  layout:(UICollectionViewLayout *)collectionViewLayout
-   footerHeightInSection:(NSInteger)sectionIndex;
+@interface DLRWaterfallCollectionViewLayout : UICollectionViewLayout
 
 @end
