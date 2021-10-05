@@ -10,19 +10,12 @@
 Pod::Spec.new do |s|
   s.name             = "DLRWaterfallLayout"
   s.version          = "0.1.0"
-  s.summary          = "A short description of DLRWaterfallLayout."
-  s.description      = <<-DESC
-                       An optional longer description of DLRWaterfallLayout
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
+  s.summary          = "A Waterfall Collection View Layout"
   s.homepage         = "https://github.com/<GITHUB_USERNAME>/DLRWaterfallLayout"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Mark Schall" => "mark@detroitlabs.com" }
+  s.author           = { "Mark Schall" => "mark@detroitlabs.com",
+                         "Nathan Walczak" => "nate.walczak@detroitlabs.com" }
   s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/DLRWaterfallLayout.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -31,8 +24,4 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'DLRWaterfallLayout' => ['Pod/Assets/*.png']
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
